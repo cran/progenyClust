@@ -1,0 +1,11 @@
+60cf6a59a4474aff81fc85d916796ca8 *DESCRIPTION
+ab2a5d92695b5fb04f563fec38bb2a9b *NAMESPACE
+ef2aac93ff797b057db777c090bc21b6 *R/plot.progenyClust.R
+65ad20c92b12eeebff35c697af5d0125 *R/print.summary.progenyClust.R
+09111bb51352c16c343ecc928ddee490 *R/progenyClust-internal.R
+bbc9f19c2dc8d21bd023d7018eb03f43 *R/progenyClust.R
+dbf6844d0165be4b408930a4cb4dd29f *R/summary.progenyClust.R
+affce11011febe167e61147c57a89d85 *data/example.rda
+db8d17ea862038cfd355e3c06a1e6ee5 *man/example.Rd
+b2e09784e88b0c79fcf1592432034071 *man/progenyClust-package.Rd
+413eb320830753e241508e3d4a9c2e60 *man/progenyClust.Rd
