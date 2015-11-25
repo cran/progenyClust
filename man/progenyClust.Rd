@@ -97,10 +97,10 @@ C.W. Hu, Rice University
 
 \examples{
 # a 3-cluster 2-dimensional example dataset
-data(example)
+data(test)
 
 # default progeny clsutering
-progenyClust(example,ncluster=2:5)->pc
+progenyClust(test,ncluster=2:5)->pc
 
 summary(pc)
 plot(pc)
