@@ -134,7 +134,8 @@ function(data,FUNclust=kmeans,method='gap',score.invert=F,ncluster=2:10,size=10,
   }
   # export
   colnames(cluster)=paste0('C',ncluster)
-  output=list(cluster=cluster,score=score,random.score=rscore,mean.gap=mean.gap,mean.score=mean.score,sd.gap=sd.gap,sd.score=sd.score,call=match.call(),ncluster=ncluster,method=method)
+  output=list(cluster=cluster,score=score,random.score=rscore,mean.gap=mean.gap,mean.score=mean.score,sd.gap=sd.gap,sd.score=sd.score,
+              call=match.call(),ncluster=ncluster,method=method,score.invert=score.invert)
   class(output)='progenyClust'
   return(output)
 }

@@ -1,6 +1,5 @@
 \name{progenyClust}
 \alias{progenyClust}
-\alias{plot.progenyClust}
 \alias{summary.progenyClust}
 \alias{print.summary.progenyClust}
 %- Also NEED an '\alias' for EACH other topic documented here.
@@ -14,7 +13,6 @@ Select the optimal number for clustering using Progeny Clustering.
 progenyClust(data, FUNclust = kmeans, method = "gap", score.invert = F, ncluster = 2:10, 
 size = 10, iteration = 100, repeats = 1, nrandom = 10, ...)
 
-\method{plot}{progenyClust}(x,errorbar=FALSE,xlab='number of clusters',ylab='progeny score',...)
 \method{summary}{progenyClust}(object,...)
 
 }
@@ -51,23 +49,11 @@ integer specifying the number of times the algorithm should be run: needs to be 
   \item{nrandom}{
 integer specifying the number of random datasets used to generate reference scores when using method 'score'. Default value is 10. 
 }
-\item{x}{
-  the S3 object of class "progenyClust"
-}
-  \item{errorbar}{
-  logical flag: specifies whether the error bars should be drawn. The error bars can only be drawn when progeny clustering is repeated multiple times, i.e. input argument "repeats" in function "progenyClust" is greater than 1.
-}
-  \item{xlab}{
-  character string specifying the name of the x axis.
-}
-  \item{ylab}{
-  character string specifying the name of the x axis.
-}
   \item{object}{
-    the S3 object of class "progenyClust"
+    the S3 object of class "progenyClust".
   }
   \item{\dots}{
-  additional arguments for FUNclust in progenyClust(...); additional graphical arguments in plot(...).
+  additional arguments for FUNclust in progenyClust(...).
 }
 }
 
@@ -85,6 +71,7 @@ progenyClust returns an object of class "progenyClust" which has a plot and summ
     \item{call}{the call with arguments specified.}
     \item{ncluster}{the specified value of input argument 'ncluster'.}
     \item{method}{the specified value of input argument 'method'.}
+    \item{score.invert}{the specified value of input argument 'score.invert'.}
 %% ...
 }
 \references{
@@ -97,7 +84,7 @@ C.W. Hu, Rice University
 
 \examples{
 # a 3-cluster 2-dimensional example dataset
-data(test)
+data('test')
 
 # default progeny clsutering
 progenyClust(test,ncluster=2:5)->pc
